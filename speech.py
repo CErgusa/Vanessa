@@ -38,14 +38,12 @@ def find_action(string):
         # assuming "Peaches" has been said
 
         #  see if we have to set a reminder
-        if("can you set a reminder" in string):
-                # do something
-                i = 0
+        
 
         # see if we have to say the date
         elif(("date" in string) and ("what is" in string)):
-                # see what day they are talking about (today, tomorrow, etc.)
-				i = 0
+            # see what day they are talking about (today, tomorrow, etc.)
+			i = 0
 
 	# see if we have to say the weather
         elif(("what is" in string) and ("weather" in string)):
@@ -80,6 +78,7 @@ def countdown(seconds):
 	global my_timer
 
 	my_timer = copy.deepcopy(seconds)
+
 
 	for i in range(seconds):
 		my_timer = my_timer - 1
